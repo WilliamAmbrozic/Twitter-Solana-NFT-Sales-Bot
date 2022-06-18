@@ -9,7 +9,6 @@
 **Note: In the rare case that your NFT file sizes are greater than 3mb, they will have to be compressed prior to being uploaded.** Please see the comment <#compress here> in the send_tweet function - place your function that compresses the ```tmp``` file there. For standard image files there are many resources online for python compression. For gifs, [this gist](https://gist.github.com/skywodd/8b68bd9c7af048afcedcea3fb1807966) may be of help.
 
 ## Contents
-- [Demo](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Demo)  
 - [Setup](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Setup)  
   - [Installing](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Installing-the-Bot) 
   - [Adding Credentials](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Adding-Credentials)
@@ -23,7 +22,6 @@
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#contents)
 
-* Demo: [ThreeRarity](https://twitter.com/ThreeRarity) (I used the core code and extended on it by implementing the HowRare API for rarity and attributes)
 * Used by [BR1SALESBOT](https://twitter.com/BR1SALESBOT)
 
 ## Setup
