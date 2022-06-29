@@ -1,5 +1,5 @@
 {
-  "ME_symbol": "ADD_YOUR_SYMBOL_HERE",
+  "ME_symbol": "pimpinpepenft",
   "twitter_credentials": {
     "bearer_token": "ADD_YOURS_HERE",
     "consumer_key": "ADD_YOURS_HERE",
@@ -10,6 +10,7 @@
   "tweet_text": "BOOM💥 [-n] just sold for [-p] ([-f])",
   "fiat_currency": "USD",
   "TPS": 2,
-  "refresh_delay": 0.5,
-  "activities_per_call": 1000
+  "refresh_delay": 0.1,
+  "activities_per_call": 1000,
+  "use_img_on_chain": false
 }

@@ -81,7 +81,7 @@ def convert_tweet(sale_data, meta):
 
 #Sends a tweet based on sale data and NFT metadata
 def send_tweet(api, client, sale_data, meta):
-    image = requests.get(meta['image']).content
+    image = requests.get(meta['image'] if config['use_img_on_chain'] else "https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/" + meta['image']).content
     with open('./tmp.png', 'wb') as handler:
         handler.write(image)
     #compress here
