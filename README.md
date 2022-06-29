@@ -34,8 +34,8 @@
 
 Clone and install Python requirements with
 ```
-git clone https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot.git
-cd Responsive-Solana-NFT-Sales-Bot
+git clone https://github.com/WilliamAmbrozic/Twitter-Solana-NFT-Sales-Bot.git
+cd Twitter-Solana-NFT-Sales-Bot
 pip install -r requirements.txt
 ```
 
