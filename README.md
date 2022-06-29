@@ -6,8 +6,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This bot allows for custom tweet text and fast response times. The bot utilizes MagicEden's ```GET/collections/:symbol/activities``` API call, responding to sales allowing for NFT image uploading and metadata access through MagicEden's API. This bot is designed to run on an external server. **This bot was tested on an EC2 AWS instance and a [Raspberry Pi 4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/)**. Usable on Windows/Unix based servers.
 
-**Note: In the rare case that your NFT file sizes are greater than 3mb, they will have to be compressed prior to being uploaded.** Please see the comment <#compress here> in the send_tweet function - place your function that compresses the ```tmp``` file there. For standard image files there are many resources online for python compression. For gifs, [this gist](https://gist.github.com/skywodd/8b68bd9c7af048afcedcea3fb1807966) may be of help.
-
 ## Contents
 - [Setup](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Setup)  
   - [Installing](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#Installing-the-Bot) 
@@ -90,8 +88,9 @@ The config file **./config/config.json** will look something like this:
   "tweet_text": "BOOM💥 [-n] just sold for [-p] ([-f])",
   "fiat_currency": "USD",
   "TPS": 2,
-  "refresh_delay": 0.01,
-  "activities_per_call": 1000
+  "refresh_delay": 0.1,
+  "activities_per_call": 1000,
+  "use_img_on_chain": false
 }
 ```
 
@@ -116,6 +115,8 @@ BOOM💥 SolGod #001 just sold for 50.24 SOL ($5000.37 USD)
 ```
 
 **fiat_currency**: The bot currently supports the following currencies: EUR, USD, CAD, JPY, GPB, AUD, CNY, INR. Change this value to change the currency in which Solana is converted if you choose to output fiat price.
+
+**use_img_on_chain**: By default in case the NFT image is greater than 3mb (Twitter will not allow) we use the compressed image file from MagicEden (use_img_on_chain == False). Change use_img_on_chain to True if you would like to use the raw image stored on ipfs, arweave, etc. **Note: In the rare case that your raw NFT file sizes are greater than 3mb, they will have to be compressed prior to being uploaded.** Please see the comment <#compress here> in the send_tweet function - place your function that compresses the ```tmp``` file there. For standard image files there are many resources online for python compression. For gifs, [this gist](https://gist.github.com/skywodd/8b68bd9c7af048afcedcea3fb1807966) may be of help.
 
 
 ## Free Use
