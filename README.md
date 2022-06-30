@@ -105,13 +105,22 @@ The config file **./config/config.json** will look something like this:
 * [-s]: The source of the sale (Ex. magiceden_v2)
 * [-b]: The blockTime the transaction occured at (Ex. 21647306453)
 
-For example, 
+For example (hypothetical data), 
 ```
 BOOM💥 [-n] just sold for [-p] ([-f])
 ```
 would become
 ```
-BOOM💥 SolGod #001 just sold for 50.24 SOL ($5000.37 USD)
+BOOM💥 SolGod #1 just sold for 50.24 SOL ($5000.37 USD)
+```
+```
+💥 [-n] SOLD for [-p] SOL ([-f])\n\n→ https://magiceden.io/item-details/[-m]"
+```
+would become
+```
+💥 SolGods #1 SOLD for 50.24 SOL ($5000.37 USD)
+
+→ https://magiceden.io/item-details/FBoEv5Xt4fKSwPhVPt5t3HXptByesbtDWnCzE6DYe4Ys"
 ```
 
 **fiat_currency**: The bot currently supports the following currencies: EUR, USD, CAD, JPY, GPB, AUD, CNY, INR. Change this value to change the currency in which Solana is converted if you choose to output fiat price.
