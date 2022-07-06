@@ -126,7 +126,7 @@ would become
 
 **fiat_currency**: The bot currently supports the following currencies: EUR, USD, CAD, JPY, GPB, AUD, CNY, INR. Change this value to change the currency in which Solana is converted if you choose to output fiat price.
 
-**use_img_on_chain**: By default in case the NFT image is greater than 3mb (Twitter will not allow) we use the compressed image file from MagicEden (```use_img_on_chain``` == False). Change ```use_img_on_chain``` to True if you would like to use the raw image stored on ipfs, arweave, etc. **Note: In the rare case that your raw NFT file sizes are greater than 3mb, they will have to be compressed prior to being uploaded.** Please see the comment <#compress here> in the send_tweet function - place your function that compresses the ```tmp``` file there. For standard image files there are many resources online for python compression. For gifs, [this gist](https://gist.github.com/skywodd/8b68bd9c7af048afcedcea3fb1807966) may be of help.
+**use_img_on_chain**: By default in case the NFT image is greater than 3mb (Twitter will not allow) the bot uses the compressed image file from MagicEden's CDN (```use_img_on_chain``` == False). Change ```use_img_on_chain``` to True if you would like to use the raw image stored on ipfs, arweave, etc. **Note: In the rare case that your raw NFT file sizes are greater than 3mb, they will have to be compressed prior to being uploaded.** Please see the comment <#compress here> in the send_tweet function - place your function that compresses the ```tmp``` file there. For standard image files there are many resources online for python compression. For gifs, [this gist](https://gist.github.com/skywodd/8b68bd9c7af048afcedcea3fb1807966) may be of help.
 
 
 ## Free Use
