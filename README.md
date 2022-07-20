@@ -70,7 +70,7 @@ Or recommended with (if you do not want an ssh exit or general exit to halt the 
 nohup python3 bot.py &
 ```
 
-**Please give the bot a few minutes to post sales.**
+**Please give the bot a few minutes to recieve sales.**
 
 ## Config
 
