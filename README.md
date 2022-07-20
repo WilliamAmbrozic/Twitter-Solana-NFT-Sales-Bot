@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/Responsive-Solana-NFT-Sales-Bot#contents)
 
-### 1. Add Your NFT MagicEden Collection Symbol to the Config.json
+### 1. Add Your NFT MagicEden Collection Symbol to the Config.json (CASE SENSITIVE)
 
 ![shot 1](https://imgur.com/OnbyLbV.png)
 
@@ -69,6 +69,8 @@ Or recommended with (if you do not want an ssh exit or general exit to halt the 
 ```
 nohup python3 bot.py &
 ```
+
+**Please give the bot a few minutes to post sales.**
 
 ## Config
 
