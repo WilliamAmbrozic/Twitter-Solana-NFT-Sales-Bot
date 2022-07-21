@@ -115,7 +115,7 @@ while True:
 
     #Checking all activities (by signature, key values)
     for activity in reversed(activities.keys()):
-        #Checking if there is a new activity with a larger blockTime
+        #Checking if there is a new activity that has yet to be tweeted
         if activity not in last_activities.keys() and activity not in tweeted_queue:
             try:
                 meta = get_meta_from_mint(activities[activity]['tokenMint'])
